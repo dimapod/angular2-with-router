@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- ES6-related imports -->
+    <script src="lib/traceur-runtime.js"></script>
+    <!--<script src="lib/es6-module-loader-sans-promises.src.js"></script>-->
+
+<!--
+    <script src="lib/es6-module-loader-sans-promises.src.js"></script>
+    <script src="lib/extension-register.js"></script>
+    <script>
+        register(System);
+    </script>
+
+    &lt;!&ndash; Angular2-related imports &ndash;&gt;
+    <script src="lib/zone.js"></script>
+    <script src="lib/long-stack-trace-zone.js"></script>
+    <script src="lib/angular2.js"></script>
+    <script src="lib/Reflect.js"></script>
+    &lt;!&ndash;<script src="lib/router.js"></script>&ndash;&gt;
+-->
+
+    <script src="https://jspm.io/system@0.16.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-alpha.23/angular2.dev.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-alpha.23/router.dev.js"></script>
+
+</head>
+<body>
+    <hello>
+        Loading...
+    </hello>
+</body>
+
+<!-- Application bootstrap logic -->
+<script>
+    System.import('app').catch(console.log.bind(console));
+</script>
+
+</html>
